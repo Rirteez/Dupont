@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\Actu;
 use App\Models\Horaire;
 use App\Models\Service;
@@ -32,7 +33,7 @@ class FrontController {
 
     public function index() {
         $horaires = $this->horaire->getAll();
-        require_once '../App/Views/index.php';
+        require_once '../app/Views/index.php';
     }
 
     public function rendezvousAdmin() {
@@ -63,7 +64,7 @@ class FrontController {
             }
         }
 
-        require_once '../App/Views/rendezvousAdmin.php';
+        require_once '../app/Views/rendezvousAdmin.php';
     }
 
     public function rendezvous() {
@@ -169,7 +170,7 @@ class FrontController {
                 }
             }
         }
-        require_once '../App/Views/rendezvous.php';
+        require_once '../app/Views/rendezvous.php';
     }
 
     public function services() {
@@ -198,12 +199,12 @@ class FrontController {
                 }
             }
         }
-        require_once '../App/Views/services.php';
+        require_once '../app/Views/services.php';
     }
 
     public function about() {
         $horaires = $this->horaire->getAll();
-        require_once '../App/Views/about.php';
+        require_once '../app/Views/about.php';
     }
 
     public function actus() {
@@ -239,7 +240,7 @@ class FrontController {
                 }
             }
         }
-        require_once '../App/Views/actus.php';
+        require_once '../app/Views/actus.php';
     }
 
     public function dashboard() {
@@ -302,7 +303,7 @@ class FrontController {
                 }
             }
         }
-        require_once '../App/Views/dashboard.php';
+        require_once '../app/Views/dashboard.php';
     }
 
     public function login() {
@@ -335,7 +336,7 @@ class FrontController {
                 }
             }
         }
-        require_once '../App/Views/login.php';
+        require_once '../app/Views/login.php';
     }
 
     public function register() {
@@ -374,7 +375,7 @@ class FrontController {
                 }
             }
         } 
-        require_once '../App/Views/register.php';
+        require_once '../app/Views/register.php';
     }
 
     private function uploadImage() {

@@ -3,7 +3,7 @@
 session_start();
 
 require_once '../vendor/autoload.php';
-require_once '../App/Config/config.php';
+require_once '../app/Config/config.php';
 use App\Controllers\FrontController;
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
